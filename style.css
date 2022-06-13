@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    gap: 10px;
+    background-color: rgb(250, 250, 250);
+}
+
+.logo{
+    display: block;
+    height: 35px;
+    margin: 50px auto;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.input{
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #e8e8e9;
+    color: #979797;
+    font-weight: 600;
+    font-size: 11px;
+    padding-left: 20px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#facebook{
+    background-color: #1877F2;
+}
+
+#google{
+    background-color: white;
+}
+
+#apple{
+    background-color: black;
+}
+
+.botao{
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 32px;
+}
+
+.icones{
+    height: 16px;
+}
+
+.check{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding-left: 45px;
+}
+
+.checkbox{
+    border: none;
+}
+
+.seta{
+    height: 75px;
+    width: 75px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+    border-color: #979797;
+    border-style: solid;
+    font-size: 25px;
+    color: #6d6d6d;
+}
+
+.rodape{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.ajuda{
+    color: #979797;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ajuda:hover{
+    color: black;
+}
+
+.version{
+    color: #979797;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 75%;
+}
+
+.version:hover{
+    color: #6d6d6d;
+}
+
+.arte{
+    width: 80%;
+}
+
+.arte-img{
+    height: 100%;
+    width: 100%;
+}
+
