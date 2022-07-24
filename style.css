@@ -9,6 +9,7 @@
 
 body{
     display: flex;
+    height: 100vh;
 }
 
 .login{
@@ -18,6 +19,7 @@ body{
     height: 100vh;
     gap: 10px;
     background-color: rgb(250, 250, 250);
+    cursor: default;
 }
 
 .logo{
@@ -78,6 +80,7 @@ form{
     border-radius: 5px;
     width: 90px;
     height: 32px;
+    cursor: pointer;
 }
 
 .icones{
@@ -107,6 +110,11 @@ form{
     border-style: solid;
     font-size: 25px;
     color: #6d6d6d;
+    cursor: pointer;
+}
+
+.seta img{
+    width: 40px;
 }
 
 .rodape{
@@ -142,10 +150,48 @@ form{
 
 .arte{
     width: 80%;
+    height: 100vh;
 }
 
 .arte-img{
     height: 100%;
     width: 100%;
 }
+
+/* checkbox personalizado pego do https://uiverse.io/checkboxes */
+/* From uiverse.io by @mobinkakei */ 
+.checkmark {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+   }
+   
+   #check:checked ~ .checkmark {
+    background-color: red; /* mudei para vermelho */
+   }
+   
+   .checkmark::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 8px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(10);
+    opacity: 0;
+    transition: all 0.4s;
+   }
+   
+   #check:checked ~ .checkmark::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+   }
 
